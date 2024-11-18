@@ -8,11 +8,12 @@ export default function Home() {
     <>
       <HomeHeader/>
       <div className="flex flex-col items-center mt-24">
-        <Image className=""
+        <Image 
             src="https://flagpalette.com/wp-content/uploads/2024/06/google-logo.png" alt="Google logo"
             width={300}
             height={100}
             priority
+            
             style={{width:"auto"}}
         />
         <Search/>
