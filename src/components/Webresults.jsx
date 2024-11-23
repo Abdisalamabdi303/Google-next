@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Parser from 'html-react-parser'
+import Pagination from "./Pagination";
 
 export default function Webresults({results}) {
   return (
-    <div className="w-full mx-auto px-3 pb-24 sm:pl-[5%] md:pl-[14%] lg:pl-52">
+    <div className="w-full mx-auto px-3 sm:pb-24 pb-40 sm:pl-[5%] md:pl-[14%] lg:pl-52">
         <p className="text-gray-600 mt-3 text-sm mb-5">
             About {results.searchInformation?.formattedTotalResults} results
             ({results.searchInformation?.formattedSearchTime} seconds)
@@ -23,6 +24,7 @@ export default function Webresults({results}) {
                 </p>
             </div>
         ))}
+        <Pagination/>
     </div>
   )
 }
