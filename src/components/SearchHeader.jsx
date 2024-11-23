@@ -12,7 +12,8 @@ export default function SearchHeader() {
         <div className=" flex w-full p-6 items-center justify-between">
           <Link href='/'>
             <Image 
-              src="https://flagpalette.com/wp-content/uploads/2024/06/google-logo.png" alt="Google logo"
+              alt='google image'
+              src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png'
               width={120}
               height={40}
               priority

@@ -4,7 +4,7 @@ const nextConfig = {
         remotePatterns:[
             {
                 protocol:'https',
-                hostname:"flagpalette.com",
+                hostname:"upload.wikimedia.org",
                 pathname:'**',
             },
         ],
