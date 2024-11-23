@@ -8,7 +8,7 @@ export default function HeaderOptions() {
     const searchTerm = searchParams.get('searchTerm')
     const pathName = usePathname()
     const selectTab=(tab)=>{
-        router.push(`/search/${tab === "images" ? "images" : "web"}?searchTerm=${searchTerm}`)
+        router.push(`/search/${tab === "images" ? "image" : "web"}?searchTerm=${searchTerm}`)
     }
   return (
     <div className="flex space-x-2 select-none border-b w-full justify-center lg:justify-start
