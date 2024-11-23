@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Parser from 'html-react-parser'
+
 import Pagination from "./Pagination";
 
 export default function Webresults({results}) {
@@ -19,9 +19,11 @@ export default function Webresults({results}) {
                         {result.title}
                     </Link>
                 </div>
-                <p className="text-gray-600">
-                 dangerouslySetInnerHTML={{ __html: result.htmlSnippet }}
-                </p>
+                <p
+            className="text-gray-600"
+            dangerouslySetInnerHTML={{ __html: result.htmlSnippet }}
+          /> 
+         
             </div>
         ))}
         <Pagination/>
