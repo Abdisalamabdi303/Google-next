@@ -1,3 +1,4 @@
+import Webresults from "@/components/Webresults";
 import Link from "next/link";
 
 
@@ -20,15 +21,9 @@ export default async function WebSearchPage({searchParams}) {
     )
   } 
   return (
-    <div className="text-red-400">
+    <div className="">
       <div className="">
-        {results ? (
-          results.map((result, index) => (
-            <h1 key={index}>{result.title}</h1>
-          ))
-        ) : (
-          <p>No results found.</p>
-        )}
+        {results && <Webresults results = {data}/> }
       </div>
     </div>
   )
