@@ -20,7 +20,7 @@ export default function Webresults({results}) {
                     </Link>
                 </div>
                 <p className="text-gray-600">
-                    {Parser(result.htmlSnippet)}
+                 dangerouslySetInnerHTML={{ __html: result.htmlSnippet }}
                 </p>
             </div>
         ))}
